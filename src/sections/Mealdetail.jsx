@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { FiX, FiClock, FiMapPin, FiCalendar, FiArrowRight } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
-import ConfirmPlan from "./confirmPlan";
 import RequestSent from "./RequestSent";
 import { addOrder } from "./orderstore";
 

@@ -21,7 +21,7 @@ import {
   updatePlan,
   removePlan,
   DAY_COUNT,
-} from "./cookmenustore";
+} from "./CookMenuStore";
 
 const DAY_NAMES = ["MON", "TUE", "WED", "THU", "FRI", "SAT"];
 const MEALS = [
