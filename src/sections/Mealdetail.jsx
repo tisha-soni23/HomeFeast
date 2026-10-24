@@ -3,7 +3,7 @@ import { FiX, FiClock, FiMapPin, FiCalendar, FiArrowRight } from "react-icons/fi
 import { FaStar } from "react-icons/fa";
 import RequestSent from "./RequestSent";
 import { addOrder } from "./orderstore";
-import ConfirmPlan from "./confirmplan";
+import ConfirmPlan from "./ConfirmPlan";
 
 const plans = [
   { id: "one", name: "One meal", desc: "Try a fresh meal today", meals: 1, save: 0 },
