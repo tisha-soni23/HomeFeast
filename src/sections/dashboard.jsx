@@ -3,7 +3,7 @@ import { useFavorites, toggleFavorite } from "./favorite";
 import { useOrders, friendlyDate } from "./orderstore";
 import CookMenuPlans from "./CookMenuplans";
 import AdminSubscriptions from "./AdminSubscriptions";
-import { useCookMenu, updatedLabel, dishCount } from "./CookMenuStore";
+import { useCookMenu, updatedLabel, dishCount } from "./cookmenustore";
 import { useSubscriptions } from "../data/subscriptionsstore";
 import CookOrders from "./Cookorders";
 import { useCookOrders } from "./Cookordersstore";
