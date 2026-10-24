@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useFavorites, toggleFavorite } from "./favorite";
 import { useOrders, friendlyDate } from "./orderstore";
-import CookMenuPlans from "./CookMenuPlans";
+import CookMenuPlans from "./cookmenuplans";
 import AdminSubscriptions from "./AdminSubscriptions";
 import { useCookMenu, updatedLabel, dishCount } from "./cookmenustore";
 import { useSubscriptions } from "../data/subscriptionsstore";
