@@ -1,6 +1,6 @@
 import { FiUsers, FiShoppingBag, FiShield, FiArrowRight } from "react-icons/fi";
 import { useState,useEffect } from "react";
-import Dashboard from "./Dashboard";
+import Dashboard from "./dashboard";
 export default function PlatformSection() {
   const [showDashboard, setShowDashboard] = useState(false);
   const [selectedRole, setSelectedRole] = useState("");

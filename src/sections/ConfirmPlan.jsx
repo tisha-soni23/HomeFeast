@@ -50,7 +50,7 @@ export default function ConfirmPlan({ meal, plan, total, onClose, onSubmit }) {
         role="dialog"
         aria-modal="true"
         onClick={(e) => e.stopPropagation()}
-        className="relative flex max-h-[92vh] w-full max-w-[560px] flex-col overflow-hidden rounded-[24px] bg-[#FFFCF7] text-[#32190F] shadow-2xl"
+        className="relative flex max-h-[92vh] w-full max-w-140 flex-col overflow-hidden rounded-3xl bg-[#FFFCF7] text-[#32190F] shadow-2xl"
       >
         <button
           type="button"

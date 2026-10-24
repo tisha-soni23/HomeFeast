@@ -151,7 +151,7 @@ export default function AdminSubscriptions() {
               </p>
             </div>
 
-            <label className="flex w-full items-center gap-3 rounded-full border border-[#E3D3C2] bg-[#FFFCF7] px-5 py-3.5 sm:w-[372px]">
+            <label className="flex w-full items-center gap-3 rounded-full border border-[#E3D3C2] bg-[#FFFCF7] px-5 py-3.5 sm:w-93">
               <FiSearch className="shrink-0 text-xl text-[#80634F]" />
               <input
                 type="text"
@@ -218,7 +218,7 @@ export default function AdminSubscriptions() {
 
         {/* Table (scrolls sideways on small screens) */}
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[1040px] text-left">
+          <table className="w-full min-w-260 text-left">
             <thead>
               <tr className="bg-[#F7EEE4] text-xs font-bold uppercase tracking-wide text-[#80634F]">
                 <th scope="col" className="px-8 py-4">Subscription</th>

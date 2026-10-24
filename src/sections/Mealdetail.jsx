@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FiX, FiClock, FiMapPin, FiCalendar, FiArrowRight } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
-import ConfirmPlan from "./ConfirmPlan";
+import ConfirmPlan from "./confirmPlan";
 import RequestSent from "./RequestSent";
 import { addOrder } from "./orderstore";
 
@@ -87,7 +87,7 @@ export default function MealDetail({ meal, onClose, onTrack }) {
         role="dialog"
         aria-modal="true"
         onClick={(e) => e.stopPropagation()}
-        className="relative flex max-h-[92vh] w-full max-w-[640px] flex-col overflow-hidden rounded-[24px] bg-[#FFFCF7] text-[#32190F] shadow-2xl"
+        className="relative flex max-h-[92vh] w-full max-w-160 flex-col overflow-hidden rounded-3xl bg-[#FFFCF7] text-[#32190F] shadow-2xl"
       >
         {/* Close button */}
         <button

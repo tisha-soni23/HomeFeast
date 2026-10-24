@@ -16,7 +16,7 @@ import {
   STATUSES,
   mealCount,
   revenue,
-} from "./cookOrdersStore";
+} from "./Cookordersstore";
 
 const TABS = ["All orders", ...STATUSES];
 const MAX_DAYS = 14;
@@ -85,7 +85,7 @@ function Popup({ label, onClose, printable, children }) {
     <div
       data-print-root={printable ? "" : undefined}
       onClick={onClose}
-      className="fixed inset-0 z-[300] flex items-center justify-center overflow-y-auto bg-[#32190F]/60 p-4 backdrop-blur-sm"
+      className="fixed inset-0 z-300 flex items-center justify-center overflow-y-auto bg-[#32190F]/60 p-4 backdrop-blur-sm"
     >
       {printable && (
         <style>{`@media print {
@@ -100,7 +100,7 @@ function Popup({ label, onClose, printable, children }) {
         aria-modal="true"
         aria-label={label}
         onClick={(e) => e.stopPropagation()}
-        className="relative my-auto max-h-[92vh] w-full max-w-[560px] overflow-y-auto rounded-[24px] bg-[#FFFCF7] p-7 text-[#32190F] shadow-2xl"
+        className="relative my-auto max-h-[92vh] w-full max-w-140 overflow-y-auto rounded-3xl bg-[#FFFCF7] p-7 text-[#32190F] shadow-2xl"
       >
         <button
           type="button"
@@ -397,7 +397,7 @@ export default function CookOrders() {
             </button>
           </div>
 
-          <label className="flex min-w-[220px] flex-1 items-center gap-3 rounded-full border border-[#E3D3C2] px-5 py-3.5">
+          <label className="flex min-w-55 flex-1 items-center gap-3 rounded-full border border-[#E3D3C2] px-5 py-3.5">
             <FiSearch className="shrink-0 text-xl text-[#80634F]" />
             <input
               type="text"
