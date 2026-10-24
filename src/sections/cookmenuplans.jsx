@@ -98,7 +98,7 @@ function DishThumb({ dish }) {
     return <img src={dish.image} alt="" className="h-16 w-16 shrink-0 rounded-2xl object-cover" />;
   }
   return (
-    <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#F4C95D] to-[#E9A23B] font-serif text-2xl font-bold text-[#6D280F]">
+    <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-linear-to-br from-[#F4C95D] to-[#E9A23B] font-serif text-2xl font-bold text-[#6D280F]">
       {dish.name.trim().charAt(0).toUpperCase() || "?"}
     </span>
   );
@@ -199,14 +199,14 @@ function Modal({ title, onClose, children }) {
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-[300] flex items-center justify-center bg-[#32190F]/60 p-4 backdrop-blur-sm"
+      className="fixed inset-0 z-300 flex items-center justify-center bg-[#32190F]/60 p-4 backdrop-blur-sm"
     >
       <div
         role="dialog"
         aria-modal="true"
         aria-label={title}
         onClick={(e) => e.stopPropagation()}
-        className="relative max-h-[92vh] w-full max-w-[520px] overflow-y-auto rounded-[24px] bg-[#FFFCF7] p-7 text-[#32190F] shadow-2xl"
+        className="relative max-h-[92vh] w-full max-w-130 overflow-y-auto rounded-3xl bg-[#FFFCF7] p-7 text-[#32190F] shadow-2xl"
       >
         <button
           type="button"
@@ -615,7 +615,7 @@ export default function CookMenuPlans() {
             return (
               <article
                 key={p.id}
-                className={`rounded-[24px] border p-6 ${
+                className={`rounded-3xl border p-6 ${
                   isPopular ? "border-[#E4B96B] bg-[#FFF4E2]" : "border-[#EBDCC8] bg-[#FFFCF7]"
                 } ${p.active ? "" : "opacity-70"}`}
               >
