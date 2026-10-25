@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="shrink-0">
           <div >
             {/* Logo */}
-            <a href="home" className="mb-4 flex items-center gap-4"><GiHotMeal className='w-10 h-10'/>
+            <a  className="mb-4 flex items-center gap-4"><GiHotMeal className='w-10 h-10'/>
 
             <span className=" mt-4 text-xl font-semibold tracking-tight">
               HomeFeast
