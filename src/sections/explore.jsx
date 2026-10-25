@@ -44,8 +44,6 @@ export default function ExploreMeals() {
     return result;
   }, [search, mealType, plan, sortBy]);
 
- 
-
   return (
     <section
       className="min-h-screen bg-[#FFF9F0] px-5 py-10 text-[#32190F] sm:px-8 lg:px-[5.2%] lg:py-12"
