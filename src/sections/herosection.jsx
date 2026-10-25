@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import image from "../assets/image.png"
+import image from "../assets/optimized/image.webp";
 import { FaArrowRight } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import Dashboard from "./dashboard";
@@ -33,7 +33,11 @@ const Herosection = () => {
    <section id="home">
     
   <div className='relative min-h-screen bg-orange-100'>
-    <img className="w-screen h-screen object-cover" src={image} alt="loading"></img>
+    <img className="w-screen h-screen object-cover" alt="Fresh homemade meals"
+      width="1920"
+      height="1280"
+      fetchPriority="high"
+      decoding="async"src={image} ></img>
   </div>
    <div className="absolute inset-0 flex items-center justify-center px-4">
       <div className="flex flex-col items-center text-center">

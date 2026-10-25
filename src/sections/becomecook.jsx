@@ -1,5 +1,5 @@
 import { FiArrowRight } from "react-icons/fi";
-import food1 from "../assets/food1.png";
+import food1 from "../assets/optimized/food1.webp";
 import { useState,useEffect } from "react";
 import Dashboard from "./dashboard";
 function BecomeCook() {
